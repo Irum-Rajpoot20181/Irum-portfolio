@@ -1,3 +1,4 @@
+import heroVideo from "../assets/299527.mp4";
 import { useEffect, useRef, useState } from "react";
 
 export default function HeroSection() {
@@ -93,8 +94,8 @@ export default function HeroSection() {
         playsInline
         poster=""
       >
-        {/* apni video ka URL yahan daalein */}
-        <source src="src/assets/299527.mp4" type="video/mp4" />      </video>
+        <source src={heroVideo} type="video/mp4" />
+      </video>
 
       {/* dark layer on top of video, color #0b0e15 */}
       <div style={styles.overlayFlat} />

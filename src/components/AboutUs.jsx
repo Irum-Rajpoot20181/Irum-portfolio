@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import image8 from "../assets/image8.jpg";
+import image1Box from "../assets/image 1.jpg";
+import image3Box from "../assets/image 3.jpg";
 
 const BLUE = "#004a6a";
 const GREEN = "#338c3a";
@@ -338,17 +341,17 @@ export default function AboutUs() {
             <div className="about-collage-glow" />
 
             <div className="about-box1">
-              <img src="src/assets/image8.jpg" alt="Irum working" className="about-box-img"
+              <img src={image8} alt="Irum working" className="about-box-img"
                 onError={e => { e.target.style.display = "none"; }} />
             </div>
 
             <div className="about-box2">
-              <img src="src/assets/image 1.jpg" alt="Design work" className="about-box-img"
+              <img src={image1Box} alt="Design work" className="about-box-img"
                 onError={e => { e.target.style.display = "none"; }} />
             </div>
 
             <div className="about-box3">
-              <img src="src/assets/image 3.jpg" alt="Results" className="about-box-img"
+              <img src={image3Box} alt="Results" className="about-box-img"
                 onError={e => { e.target.style.display = "none"; }} />
             </div>
 
